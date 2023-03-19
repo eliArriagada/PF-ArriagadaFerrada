@@ -1,0 +1,227 @@
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: coral;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+h2 {
+    color: chocolate;
+}
+
+h3 {
+    color: goldenrod;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+color: red;
+}
+
+a.boton:hover{
+   
+    border-color: rgb(0, 255, 0);
+    color: rgb(229, 27, 27);
+    background-color: rgb(76, 43, 226);
+
+}
+
+p {
+    font-size: large;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "nav header"
+        "nav contenido"
+        "nav footer";
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 200px 1fr 100px;
+}
+
+.header {
+    grid-area: header;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-center;
+    flex-direction: column;
+    color: chocolate;
+    grid-area: nav;
+    
+}
+
+.contenido {
+
+    color: whitesmoke;
+    grid-area: contenido;
+    padding: 25px;
+   
+
+
+}
+
+.footer {
+
+    color: aliceblue;
+    grid-area: footer;
+    
+}
+
+.centrar {
+    text-align: center;
+}
+
+.ajustado {
+    display: inline-block;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.boton-derecha {
+    text-align: end;
+    margin: 30px 20px;
+}
+
+.tarjeta {
+    margin: 10px;
+    border-top: 2px;
+    border-radius: 10%;
+    border: 1px solid;
+    border-color: white;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    vertical-align: top;
+    margin-left: 40px;
+}
+
+.imagen-uno {
+    margin-left: 10px;
+}
+
+.imagen-dos {
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+.imagen-tres {
+    margin-left: 20px;
+}
+
+.imagen-cinco-pizza {
+    width: 330px;
+}
+
+.margin-25 {
+    margin: 25px;
+}
+
+.margin-55 {
+    margin: 55px;
+}
+
+.bordes {
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: brown;
+}
+
+.boton {
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: darkorange;
+    padding: 12px;
+    font-size: medium;
+
+    color: black;
+    background-color: rgb(226, 104, 43);
+}
+
+.activo {
+    color: red;
+}
+
+.padding-button20px {
+    padding-bottom: 20px;
+}
+
+.tamanio-pizza {
+    width: 270px;
+}
+
+.precio {
+    border-radius: 20px;
+    border: 2px solid;
+    font-size: x-large;
+    background-color: coral;
+    color: aliceblue;
+}
+
+.descripcion {
+    text-align: justify;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column a {
+    padding: 5px;
+    max-width: 50px;
+}
+
+@media (max-width:560px) {
+    
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "nav"
+            "header"
+            "contenido"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 200px 1fr 100px;
+    }
+
+    .centrar-mobile {
+        text-align: center;
+    }
+
+
+    .imagen-dos {
+        display: none;
+    }
+    .nombre-pizzeria{
+    display: none;
+}
+    .menu {
+        flex-direction: row;
+    }
+
+
+
+}
