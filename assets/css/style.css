@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 h1 {
@@ -160,6 +160,11 @@ ul {
     background-color: rgb(226, 104, 43);
 }
 
+.btn-primary{
+    border-color: darkorange;
+    background-color: rgb(226, 104, 43);
+}  
+
 .activo {
     color: red;
 }
@@ -188,10 +193,8 @@ ul {
     display: flex;
     flex-direction: column;
 }
-
-.flex-column a {
-    padding: 5px;
-    max-width: 50px;
+.text-primary{
+    color: chocolate !important;
 }
 
 @media (max-width:560px) {
@@ -221,7 +224,4 @@ ul {
     .menu {
         flex-direction: row;
     }
-
-
-
 }
