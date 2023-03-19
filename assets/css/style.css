@@ -22,16 +22,15 @@ a {
     color: white;
 }
 
-a:hover{
-color: red;
+a:hover {
+    color: rgb(160, 156, 19);
 }
 
-a.boton:hover{
-   
-    border-color: rgb(0, 255, 0);
-    color: rgb(229, 27, 27);
-    background-color: rgb(76, 43, 226);
+a.boton:hover {
 
+    border-color: rgb(163, 75, 32);
+    color: rgb(240, 219, 208);
+    background-color: rgb(116, 49, 16);
 }
 
 p {
@@ -39,9 +38,8 @@ p {
     text-align: center;
 }
 
-ul {
-    list-style: none;
-    padding: 0%;
+.header h1{
+    margin: 0px 0px;
 }
 
 .grid-container {
@@ -56,7 +54,7 @@ ul {
 
 .header {
     grid-area: header;
-    
+
 }
 
 .nav {
@@ -65,7 +63,6 @@ ul {
     flex-direction: column;
     color: chocolate;
     grid-area: nav;
-    
 }
 
 .contenido {
@@ -73,7 +70,7 @@ ul {
     color: whitesmoke;
     grid-area: contenido;
     padding: 25px;
-   
+
 
 
 }
@@ -82,7 +79,6 @@ ul {
 
     color: aliceblue;
     grid-area: footer;
-    
 }
 
 .centrar {
@@ -97,12 +93,32 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .boton-derecha {
     text-align: end;
     margin: 30px 20px;
+}
+
+.boton {
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: darkorange;
+    padding: 12px;
+    font-size: medium;
+    color: black;
+    background-color: rgb(226, 104, 43);
+}
+
+.btn-primary {
+    border-color: darkorange;
+    background-color: rgb(226, 104, 43);
+}
+
+.btn-primary:hover{
+    border-color: rgb(163, 75, 32);
+    color: rgb(240, 219, 208);
+    background-color: rgb(116, 49, 16);
 }
 
 .tarjeta {
@@ -149,21 +165,6 @@ ul {
     border-color: brown;
 }
 
-.boton {
-    border-radius: 15px;
-    border: 1px solid;
-    border-color: darkorange;
-    padding: 12px;
-    font-size: medium;
-
-    color: black;
-    background-color: rgb(226, 104, 43);
-}
-
-.btn-primary{
-    border-color: darkorange;
-    background-color: rgb(226, 104, 43);
-}  
 
 .activo {
     color: red;
@@ -193,12 +194,13 @@ ul {
     display: flex;
     flex-direction: column;
 }
-.text-primary{
+
+.text-primary {
     color: chocolate !important;
 }
 
 @media (max-width:560px) {
-    
+
     .grid-container {
         display: grid;
         grid-template-areas:
@@ -218,9 +220,11 @@ ul {
     .imagen-dos {
         display: none;
     }
-    .nombre-pizzeria{
-    display: none;
-}
+
+    .nombre-pizzeria {
+        display: none;
+    }
+
     .menu {
         flex-direction: row;
     }
