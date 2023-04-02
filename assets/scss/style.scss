@@ -1,0 +1,231 @@
+@import "color";
+@import "maps";
+@import "reset";
+
+
+/*metodo*/
+@mixin bordeFondoColor($border, $background) {
+    border-color: $border ;
+    background-color: $background;
+}
+
+
+body {
+    background-color: $colorFondo;
+    
+}
+
+h1 {
+    color: $colorPrincipal;
+    font-size: xxx-large;
+    text-align: center;
+    transition: color 2s;
+
+    &:hover {
+        color: white;
+    }
+}
+
+h2 {
+    color: $colorSecundario;
+}
+
+h3 {
+    color: $colorTexto;
+}
+
+a {
+    color: white;
+
+    &:hover {
+        color: rgb(160, 156, 19);
+    }
+
+    .boton {
+        &:hover {
+            color: rgb(240, 219, 208);
+            @include bordeFondoColor(rgb(163, 75, 32), rgb(116, 49, 16))
+        }
+    }
+}
+
+p {
+    font-size: large;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+
+    h1 {
+        margin: 0px 0px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "nav header"
+        "nav contenido"
+        "nav footer";
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 200px 1fr 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-center;
+    flex-direction: column;
+    color: $colorSecundario;
+    grid-area: nav;
+}
+
+.contenido {
+
+    color: whitesmoke;
+    grid-area: contenido;
+    padding: 25px;
+}
+
+.footer {
+    color: aliceblue;
+    grid-area: footer;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.ajustado {
+    display: inline-block;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boton-derecha {
+    text-align: end;
+    margin: 30px 20px;
+}
+
+.boton {
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 12px;
+    font-size: medium;
+    color: $colorFondo;
+    @include bordeFondoColor ($colorBorde, $colorBackground);
+}
+
+.btn-primary {
+    @include bordeFondoColor ($colorBorde, $colorBackground);
+
+    &:hover {
+        color: rgb(240, 219, 208);
+        @include bordeFondoColor ($colorBordeHover, $colorBackgroundHover);
+    }
+}
+
+.tarjeta {
+    margin: 10px;
+    border-top: 2px;
+    border-radius: 10%;
+    border: 1px solid;
+    padding: 5px;
+    color: $colorFondo;
+    vertical-align: top;
+    margin-left: 40px;
+    @include bordeFondoColor (white, white);
+}
+
+/*maps*/
+@each $nombre,
+$valor in $imagen {
+    .imagen-#{$nombre} {
+        margin-left: $valor;
+    }
+}
+
+.imagen-cinco-pizza {
+    width: 330px;
+}
+
+@each $margen in 25,
+55 {
+    .margin-#{$margen} {
+        margin:#{$margen}px;
+    }
+}
+
+.bordes {
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: brown;
+}
+
+
+.activo {
+    color: red;
+}
+
+.padding-button20px {
+    padding-bottom: 20px;
+}
+
+.tamanio-pizza {
+    width: 270px;
+}
+
+.precio {
+    border-radius: 20px;
+    border: 2px solid;
+    font-size: x-large;
+    background-color: coral;
+    color: aliceblue;
+}
+
+.descripcion {
+    text-align: justify;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-primary {
+    color: $colorSecundario !important;
+}
+
+@media (max-width:560px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "nav"
+            "header"
+            "contenido"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 200px 1fr 100px;
+    }
+
+    .centrar-mobile {
+        text-align: center;
+    }
+
+
+    /*maps*/
+    @each $nombre in $desaparecer {
+        .#{$nombre} {
+            display: none;
+        }
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+}

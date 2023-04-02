@@ -1,0 +1,31 @@
+
+
+/* CSS Reset */
+
+/* Establece todos los márgenes y el padding a 0 */
+* {
+    padding: 0;
+    border: 0;
+    &::before,
+    &::after {
+        border: 0;
+    }
+}
+
+/* Establece el tamaño de fuente a 100% */
+html {
+    font-size: 100%;
+}
+
+/* Establece el tamaño de fuente de los elementos a 1em */
+body {
+    font-size: 1em;
+    font-family: 'Montserrat',
+    sans-serif !important;
+    line-height: 1;  /* Establece la altura de línea a 1 */
+     }
+     
+    /* Elimina la decoración de enlaces */
+    a {
+        text-decoration: none;
+    }
