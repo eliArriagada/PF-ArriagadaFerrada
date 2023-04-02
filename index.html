@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momo Mia</title>
+    <meta name="Pizzeria" content="Somos La Momo Mia, una pizzería artesanal que ha destacado por ofrecer a nuestros clientes variedad
+    de pizzas y un buen servicio">
+    <meta name="pizzeria" content="Pizzas, comida a domicilio, evento, comida rápida,">
+    <title>Pizzeria La Momo Mia</title>
     <link rel="stylesheet" href="/assets/css/style.css ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/imgs/momo-uno.jpeg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -45,28 +50,29 @@
         </div>
         <section class="contenido ajustado">
             <img src="/assets/imgs/pizza-uno.jpg" class="imagen-dos bordes" alt="pizza" title="la pizza">
-            <div class="centrar">
+            <div class="centrar margin-25">
                 <div class="ajustado">
                     <h1 class="centrar">¡Bienvenidos!</h1>
                 </div>
                 <img src="/assets/imgs/momo-dos.jpeg" class="imagen-tres bordes" alt="pizza" title="la pizza dos">
             </div>
-            <p>Somos La Momo Mia, una pizzería artesanal que ha destacado por ofrecer a nuestros clientes variedad de
-                pizzas
-                y un bien servicio.</p>
-            <div class="centrar">
-                <div class="ajustado margin-25">
-                    <img src="/assets/imgs/horno.jpeg" class="imagen-cuatro-horno bordes" alt="horno" title="horno">
-                    <p> Horneadas al momento.</p>
-                </div>
-                <div class="ajustado">
-                    <img src="/assets/imgs/pizza-dos.jpg" class="imagen-cinco-pizza bordes" alt="pizza" title="pizza">
-                    <p> Masa liviana, ligera y deliciosa.</p>
+            <div data-aos="fade-right">
+                <p>Somos La Momo Mia, una pizzería artesanal que ha destacado por ofrecer a nuestros clientes variedad
+                    de pizzas y un buen servicio.</p>
+                <div class="centrar">
+                    <div class="ajustado margin-25">
+                        <img src="/assets/imgs/horno.jpeg" class="imagen-cuatro-horno bordes" alt="horno" title="horno">
+                        <p> Horneadas al momento.</p>
+                    </div>
+                    <div class="ajustado">
+                        <img src="/assets/imgs/pizza-dos.jpg" class="imagen-cinco-pizza bordes" alt="pizza"
+                            title="pizza">
+                        <p> Masa liviana, ligera y deliciosa.</p>
+                    </div>
                 </div>
             </div>
-
             <h2 class="centrar">Nuestras pizzas</h2>
-            <div class="centrar flex-wrap">
+            <div class="centrar flex-wrap" data-aos="fade-left">
                 <div class="tarjeta">
                     <h3>Margherita</h3>
 
@@ -118,7 +124,10 @@
     </div>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
