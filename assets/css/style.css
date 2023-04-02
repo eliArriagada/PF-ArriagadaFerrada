@@ -1,231 +1,240 @@
+@charset "UTF-8";
+/* CSS Reset */
+/* Establece todos los márgenes y el padding a 0 */
+* {
+  padding: 0;
+  border: 0;
+}
+*::before, *::after {
+  border: 0;
+}
+
+/* Establece el tamaño de fuente a 100% */
+html {
+  font-size: 100%;
+}
+
+/* Establece el tamaño de fuente de los elementos a 1em */
 body {
-    background-color: black;
-    font-family: 'Montserrat', sans-serif !important;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif !important;
+  line-height: 1; /* Establece la altura de línea a 1 */
+}
+
+/* Elimina la decoración de enlaces */
+a {
+  text-decoration: none;
+}
+
+/*metodo*/
+body {
+  background-color: black;
 }
 
 h1 {
-    color: coral;
-    font-size: xxx-large;
-    text-align: center;
+  color: coral;
+  font-size: xxx-large;
+  text-align: center;
+  transition: color 2s;
+}
+h1:hover {
+  color: white;
 }
 
 h2 {
-    color: chocolate;
+  color: chocolate;
 }
 
 h3 {
-    color: goldenrod;
+  color: goldenrod;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  color: white;
 }
-
 a:hover {
-    color: rgb(160, 156, 19);
+  color: rgb(160, 156, 19);
 }
-
-a.boton:hover {
-
-    border-color: rgb(163, 75, 32);
-    color: rgb(240, 219, 208);
-    background-color: rgb(116, 49, 16);
+a .boton:hover {
+  color: rgb(240, 219, 208);
+  border-color: rgb(163, 75, 32);
+  background-color: rgb(116, 49, 16);
 }
 
 p {
-    font-size: large;
-    text-align: center;
-}
-
-.header h1{
-    margin: 0px 0px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        "nav header"
-        "nav contenido"
-        "nav footer";
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 200px 1fr 100px;
+  font-size: large;
+  text-align: center;
 }
 
 .header {
-    grid-area: header;
+  grid-area: header;
+}
+.header h1 {
+  margin: 0px 0px;
+}
 
+.grid-container {
+  display: grid;
+  grid-template-areas: "nav header" "nav contenido" "nav footer";
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 200px 1fr 100px;
 }
 
 .nav {
-    display: flex;
-    justify-content: flex-center;
-    flex-direction: column;
-    color: chocolate;
-    grid-area: nav;
+  display: flex;
+  justify-content: flex-center;
+  flex-direction: column;
+  color: chocolate;
+  grid-area: nav;
 }
 
 .contenido {
-
-    color: whitesmoke;
-    grid-area: contenido;
-    padding: 25px;
-
-
-
+  color: whitesmoke;
+  grid-area: contenido;
+  padding: 25px;
 }
 
 .footer {
-
-    color: aliceblue;
-    grid-area: footer;
+  color: aliceblue;
+  grid-area: footer;
 }
 
 .centrar {
-    text-align: center;
+  text-align: center;
 }
 
 .ajustado {
-    display: inline-block;
+  display: inline-block;
 }
 
 .flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .boton-derecha {
-    text-align: end;
-    margin: 30px 20px;
+  text-align: end;
+  margin: 30px 20px;
 }
 
 .boton {
-    border-radius: 15px;
-    border: 1px solid;
-    border-color: darkorange;
-    padding: 12px;
-    font-size: medium;
-    color: black;
-    background-color: rgb(226, 104, 43);
+  border-radius: 15px;
+  border: 1px solid;
+  padding: 12px;
+  font-size: medium;
+  color: black;
+  border-color: darkorange;
+  background-color: rgb(226, 104, 43);
 }
 
 .btn-primary {
-    border-color: darkorange;
-    background-color: rgb(226, 104, 43);
+  border-color: darkorange;
+  background-color: rgb(226, 104, 43);
 }
-
-.btn-primary:hover{
-    border-color: rgb(163, 75, 32);
-    color: rgb(240, 219, 208);
-    background-color: rgb(116, 49, 16);
+.btn-primary:hover {
+  color: rgb(240, 219, 208);
+  border-color: rgb(163, 75, 32);
+  background-color: rgb(116, 49, 16);
 }
 
 .tarjeta {
-    margin: 10px;
-    border-top: 2px;
-    border-radius: 10%;
-    border: 1px solid;
-    border-color: white;
-    padding: 5px;
-    background-color: white;
-    color: black;
-    vertical-align: top;
-    margin-left: 40px;
+  margin: 10px;
+  border-top: 2px;
+  border-radius: 10%;
+  border: 1px solid;
+  padding: 5px;
+  color: black;
+  vertical-align: top;
+  margin-left: 40px;
+  border-color: white;
+  background-color: white;
 }
 
+/*maps*/
 .imagen-uno {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .imagen-dos {
-    margin-left: 15%;
-    margin-bottom: 10%;
+  margin-left: 15%;
 }
 
 .imagen-tres {
-    margin-left: 20px;
+  margin-left: 20%;
 }
 
 .imagen-cinco-pizza {
-    width: 330px;
+  width: 330px;
 }
 
 .margin-25 {
-    margin: 25px;
+  margin: 25px;
 }
 
 .margin-55 {
-    margin: 55px;
+  margin: 55px;
 }
 
 .bordes {
-    border-radius: 20px;
-    border: 1px solid;
-    border-color: brown;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: brown;
 }
 
-
 .activo {
-    color: red;
+  color: red;
 }
 
 .padding-button20px {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .tamanio-pizza {
-    width: 270px;
+  width: 270px;
 }
 
 .precio {
-    border-radius: 20px;
-    border: 2px solid;
-    font-size: x-large;
-    background-color: coral;
-    color: aliceblue;
+  border-radius: 20px;
+  border: 2px solid;
+  font-size: x-large;
+  background-color: coral;
+  color: aliceblue;
 }
 
 .descripcion {
-    text-align: justify;
+  text-align: justify;
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .text-primary {
-    color: chocolate !important;
+  color: chocolate !important;
 }
 
-@media (max-width:560px) {
-
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            "nav"
-            "header"
-            "contenido"
-            "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: 80px 200px 1fr 100px;
-    }
-
-    .centrar-mobile {
-        text-align: center;
-    }
-
-
-    .imagen-dos {
-        display: none;
-    }
-
-    .nombre-pizzeria {
-        display: none;
-    }
-
-    .menu {
-        flex-direction: row;
-    }
+@media (max-width: 560px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "nav" "header" "contenido" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 200px 1fr 100px;
+  }
+  .centrar-mobile {
+    text-align: center;
+  }
+  /*maps*/
+  .nombre-pizzeria {
+    display: none;
+  }
+  .imagen-dos {
+    display: none;
+  }
+  .menu {
+    flex-direction: row;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
