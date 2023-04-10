@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Pizzeria" content="Somos La Momo Mia, una pizzería artesanal que ha destacado por ofrecer a nuestros clientes variedad
+    <meta name="description" content="Somos La Momo Mia, una pizzería artesanal que ha destacado por ofrecer a nuestros clientes variedad
     de pizzas y un buen servicio">
-    <meta name="pizzeria" content="Pizzas, comida a domicilio, evento, comida rápida,">
+    <meta name="keywords" content="Pizzas, comida a domicilio, evento, comida rápida,">
     <title>Pizzeria La Momo Mia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,9 +43,36 @@
                 </a>
             </div>
         </section>
+         <div class=" header centrar centrar">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <h1 class="centrar"> <a href="../index.html">LA MOMO MIA 
+                    </a></h1>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/pizzas.html">Nuestras Pizzas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/planes.html">Nuestros Planes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/preguntas.html">Preguntas Frecuentes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/pages/contactanos.html">Contáctanos</a>
+                      </li>
+                     
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         <div class=" header centrar">
             <div class="ajustado">
-                <h1 class="centrar">LA MOMO MIA</h1>
+                <h1 class=" titulo-desktop centrar">LA MOMO MIA</h1>
                 <h2 class=" centrar"> Amor por la buena pizza</h2>
             </div>
             <img src="/assets/imgs/momo-uno.jpeg" class="imagen-uno bordes" alt="momo" title="La momo">
@@ -72,7 +101,7 @@
                 </div>
             </div>
             <h2 class="centrar">Nuestras pizzas</h2>
-            <div class="centrar flex-wrap" data-aos="fade-left">
+            <div class="centrar flex-wrap">
                 <div class="tarjeta">
                     <h3>Margherita</h3>
 
@@ -129,5 +158,7 @@
         AOS.init();
     </script>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous"></script>
 </html>

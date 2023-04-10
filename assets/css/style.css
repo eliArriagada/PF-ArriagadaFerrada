@@ -88,6 +88,10 @@ p {
   grid-area: nav;
 }
 
+.navbar {
+  display: none;
+}
+
 .contenido {
   color: whitesmoke;
   grid-area: contenido;
@@ -220,7 +224,7 @@ p {
     display: grid;
     grid-template-areas: "nav" "header" "contenido" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 200px 1fr 100px;
+    grid-template-rows: 0px 200px 1fr 100px;
   }
   .centrar-mobile {
     text-align: center;
@@ -233,7 +237,13 @@ p {
     display: none;
   }
   .menu {
-    flex-direction: row;
+    display: none;
+  }
+  .titulo-desktop {
+    display: none;
+  }
+  .navbar {
+    display: block;
   }
 }
 

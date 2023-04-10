@@ -79,7 +79,9 @@ p {
     color: $colorSecundario;
     grid-area: nav;
 }
-
+.navbar {
+    display: none;
+}
 .contenido {
 
     color: whitesmoke;
@@ -210,7 +212,7 @@ $valor in $imagen {
             "contenido"
             "footer";
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 200px 1fr 100px;
+        grid-template-rows: 0px 200px 1fr 100px;
     }
 
     .centrar-mobile {
@@ -226,6 +228,14 @@ $valor in $imagen {
     }
 
     .menu {
-        flex-direction: row;
+        display: none;
     }
+    .titulo-desktop{
+        
+        display: none;
+    }
+    .navbar {
+        display: block;
+         }
+    
 }
