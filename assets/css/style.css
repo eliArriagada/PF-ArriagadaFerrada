@@ -53,10 +53,10 @@ a {
   color: white;
 }
 a:hover {
-  color: rgb(160, 156, 19);
+  color: white;
 }
 a .boton:hover {
-  color: rgb(240, 219, 208);
+  color: white;
   border-color: rgb(163, 75, 32);
   background-color: rgb(116, 49, 16);
 }
@@ -90,6 +90,10 @@ p {
 
 .navbar {
   display: none;
+}
+
+.header-burger {
+  grid-area: nav-responsive;
 }
 
 .contenido {
@@ -145,7 +149,7 @@ p {
 .tarjeta {
   margin: 10px;
   border-top: 2px;
-  border-radius: 10%;
+  border-radius: 10px;
   border: 1px solid;
   padding: 5px;
   color: black;
@@ -204,6 +208,9 @@ p {
   font-size: x-large;
   background-color: coral;
   color: aliceblue;
+  display: block;
+  margin-top: 5px;
+  padding: 10px;
 }
 
 .descripcion {
@@ -222,9 +229,12 @@ p {
 @media (max-width: 560px) {
   .grid-container {
     display: grid;
-    grid-template-areas: "nav" "header" "contenido" "footer";
+    grid-template-areas: "nav-responsive " "header" "contenido" "footer";
     grid-template-columns: 1fr;
     grid-template-rows: 0px 200px 1fr 100px;
+  }
+  .header {
+    margin-top: 100px;
   }
   .centrar-mobile {
     text-align: center;

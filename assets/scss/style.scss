@@ -12,7 +12,7 @@
 
 body {
     background-color: $colorFondo;
-    
+
 }
 
 h1 {
@@ -38,12 +38,12 @@ a {
     color: white;
 
     &:hover {
-        color: rgb(160, 156, 19);
+        color: white;
     }
 
     .boton {
         &:hover {
-            color: rgb(240, 219, 208);
+            color: white;
             @include bordeFondoColor(rgb(163, 75, 32), rgb(116, 49, 16))
         }
     }
@@ -79,9 +79,15 @@ p {
     color: $colorSecundario;
     grid-area: nav;
 }
+
 .navbar {
     display: none;
 }
+.header-burger{
+    grid-area: nav-responsive;
+
+}
+
 .contenido {
 
     color: whitesmoke;
@@ -134,7 +140,7 @@ p {
 .tarjeta {
     margin: 10px;
     border-top: 2px;
-    border-radius: 10%;
+    border-radius: 10px;
     border: 1px solid;
     padding: 5px;
     color: $colorFondo;
@@ -187,6 +193,9 @@ $valor in $imagen {
     font-size: x-large;
     background-color: coral;
     color: aliceblue;
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
 }
 
 .descripcion {
@@ -207,12 +216,16 @@ $valor in $imagen {
     .grid-container {
         display: grid;
         grid-template-areas:
-            "nav"
+            "nav-responsive "
             "header"
             "contenido"
             "footer";
         grid-template-columns: 1fr;
         grid-template-rows: 0px 200px 1fr 100px;
+    }
+
+    .header{
+        margin-top: 100px;
     }
 
     .centrar-mobile {
@@ -225,17 +238,11 @@ $valor in $imagen {
         .#{$nombre} {
             display: none;
         }
+
     }
 
-    .menu {
-        display: none;
-    }
-    .titulo-desktop{
-        
-        display: none;
-    }
     .navbar {
         display: block;
-         }
-    
+    }
+
 }
