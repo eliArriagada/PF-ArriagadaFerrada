@@ -236,7 +236,7 @@ $valor in $imagen {
     /*maps*/
     @each $nombre in $desaparecer {
         .#{$nombre} {
-            display: none;
+            display: none !important;
         }
 
     }

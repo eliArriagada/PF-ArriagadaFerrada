@@ -241,16 +241,19 @@ p {
   }
   /*maps*/
   .nombre-pizzeria {
-    display: none;
+    display: none !important;
   }
   .imagen-dos {
-    display: none;
+    display: none !important;
   }
   .menu {
-    display: none;
+    display: none !important;
   }
   .titulo-desktop {
-    display: none;
+    display: none !important;
+  }
+  .menu-boostrap {
+    display: none !important;
   }
   .navbar {
     display: block;
